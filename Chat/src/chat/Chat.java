@@ -11,7 +11,7 @@ public class Chat {
         
         int opcion;
         
-          PilaChat Lista = new Pilachat();
+          PilaChat Lista = new PilaChat();
                 do{
                     
                     opcion = Integer.parseInt(JOptionPane.showInputDialog("***** WASA *** \n " + "Menu de opciones \n" +
@@ -25,17 +25,17 @@ public class Chat {
     case 1:
 String m = (JOptionPane.showInputDialog(null, "Ingrese el nombre del Contacto: "));
 String f = (JOptionPane.showInputDialog(null, "Ingrese el Mensaje : "));
-Lista.NuevoPasajero(m,f);
+Lista.NuevoMensaje(m, f);
 break;
+//case 2:
+//JOptionPane.showMessageDialog(null, "En el avion hay: " + Lista.sumaNodoPas() + " Pasajeros ");
+//break;
 case 2:
-JOptionPane.showMessageDialog(null, "En el avion hay: " + Lista.sumaNodoPas() + " Pasajeros ");
+JOptionPane.showMessageDialog(null, "Mostrar todos los mensajes : " + Lista.Mensajes());
 break;
-case 3:
-JOptionPane.showMessageDialog(null, "Lista de pasajeros en el avion " + Lista.Pasajeros());
-break;
-case 4:
-Lista.SalidaPasajeros();
-break;
+//case 3:
+//Lista.SalidaPasajeros();
+//break;
 
 
 }
