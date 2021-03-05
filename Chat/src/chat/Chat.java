@@ -27,17 +27,12 @@ String m = (JOptionPane.showInputDialog(null, "Ingrese el nombre del Contacto: "
 String f = (JOptionPane.showInputDialog(null, "Ingrese el Mensaje : "));
 Lista.NuevoMensaje(m, f);
 break;
-//case 2:
-//JOptionPane.showMessageDialog(null, "En el avion hay: " + Lista.sumaNodoPas() + " Pasajeros ");
-//break;
 case 2:
 JOptionPane.showMessageDialog(null, "Mostrar todos los mensajes : " + Lista.Mensajes());
 break;
-//case 3:
-//Lista.SalidaPasajeros();
-//break;
-
-
+case 3:
+Lista.RecuperarMensaje();
+ break;
 }
                 
         } while(opcion!=4);
