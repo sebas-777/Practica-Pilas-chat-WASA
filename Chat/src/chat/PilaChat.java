@@ -1,14 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package chat;
 
-/**
- *
- * @author Shebas
- */
+
 import javax.swing.JOptionPane;
 
 public class PilaChat {
@@ -56,4 +49,22 @@ NodoChat cabeza;
         return cadena;
     
     }
+    
+    public void   RecuperarMensaje(){
+    
+                NodoChat p; 
+                
+                 p = cabeza;
+                
+                if(p !=null){
+                
+                    JOptionPane.showMessageDialog(null, " El Ultimo Mensaje :  " + p.obtenerMensaje() + " \n" + " De: " + p.obtenerContacto());
+                                        cabeza =p.obtenerPointer();
+
+                }
+                else{
+                    JOptionPane.showMessageDialog(null, " No Hay Mas Mensajes ");
+                }
+    }
+    
 }
